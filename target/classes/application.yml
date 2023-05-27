@@ -1,0 +1,19 @@
+server:
+  port: 8001
+  error:
+    include-message: always
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    generate-ddl: false
+    show-sql: false
+  mvc:
+    async:
+      request-timeout: -1
+
+  datasource:
+    url: jdbc:mysql://localhost:33060/core?sslmode=disable
+    username: root
+    password: test123
